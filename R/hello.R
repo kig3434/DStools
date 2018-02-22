@@ -15,8 +15,9 @@
 
 hello <- function() {
   print("Hello, world!")
-  x <- rnorm(100000) # random sampling
-  hist(x) #histogram
+  x <- rnorm(100000)
+  hist(x)
   mean(x)
-
+print(x)
 }
+
