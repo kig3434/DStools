@@ -19,5 +19,6 @@ hello <- function() {
   hist(x)
   mean(x)
 print(x)
+sss
 }
 
