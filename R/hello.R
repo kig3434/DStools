@@ -135,22 +135,27 @@ USdollar_to_euro(5)
 
 
 ##4
-craps <- function(x, y) {
+basiccraps <- function(x, y) {
   d1 <- sample(1:6, 1)
   d2 <-sample(1:6, 1)
-  print(d1)
-  print(d2)
+  print('Playing Craps when the point is On')
+  print(paste("Dice number one,", d1), quote = FALSE)
+  print(paste("Dice number two,", d2), quote = FALSE)
   Sum <- sum(d1, d2)
-  print(Sum)
+  print(paste("Total", Sum), quote = FALSE)
   if(Sum =='7'){
-    print('CRAPS')
+    print('CRAPS, Pass the dice')
   }
-  else if(Sum =='11'){
-    print('CRAPS')
+  else if(d1 == d2){
+    sprintf("%i The Hard Way, roll again", Sum)
   }
+  else {
+    print("Roll again")
+  }
+
 }
 
-craps(roll)
+basiccraps(roll)
 
 #6. Commit and push your code to Github
 
