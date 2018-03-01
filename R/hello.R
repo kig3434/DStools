@@ -14,7 +14,7 @@
 #   Test Package:              'Cmd + Shift + T'
 
 #Hw 6. Function and packages
-#practice change
+#practice changess
 
 library(tidyverse)
 library(ggthemes)
